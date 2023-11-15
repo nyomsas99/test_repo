@@ -10,7 +10,7 @@ display_height = 600
 gameDisplay = pygame.display.set_mode((800,600))
 pygame.display.set_caption('Tank War')
 
-icon = pygame.image.load("icon.jpg")
+icon = pygame.image.load("ic.jpg")
 pygame.display.set_icon(icon)
 
 
