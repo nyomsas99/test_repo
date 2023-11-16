@@ -35,12 +35,10 @@ while True:
             toleransi_value = nilai * toleransi_percent[toleransi] / 100
 
             return nilai, toleransi_value
-
         warna1 = input("Masukkan warna pertama: ").lower()
         warna2 = input("Masukkan warna kedua: ").lower()
         warna3 = input("Masukkan warna ketiga: ").lower()
         toleransi = input("Masukkan toleransi (emas/perak/tanpa warna): ").lower()
-
         nilai, toleransi_value = hitung_nilai_resistor(warna1, warna2, warna3, toleransi)
 
         if(toleransi_value >= 1000 ):
@@ -49,4 +47,4 @@ while True:
         else:
             print(f"Nilai Total Resistor: {toleransi_value} ohm")
     else:
-        exit()
+        break
