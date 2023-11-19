@@ -11,7 +11,9 @@ while True:
 
         hex_number = input("Masukkan bilangan heksadesimal: ")
         decimal_result = hex_to_decimal(hex_number)
+        print('-----------------------------------')
         print(f"Hasil konversi: {decimal_result}")
+        print('-----------------------------------')
     elif(x == 2):
         def decimal_to_hex(decimal_number):
             try:
@@ -21,7 +23,9 @@ while True:
                 print("Input tidak valid. Pastikan input merupakan bilangan desimal yang benar.")
         decimal_number = int(input("Masukkan bilangan desimal: "))
         hex_result = decimal_to_hex(decimal_number)
+        print('------------------------------')
         print(f"Hasil konversi: {hex_result}")
+        print('------------------------------')
     elif(x == 3):
         def hitung_nilai_resistor(warna1, warna2, warna3, toleransi):
             nilai_warna = {
@@ -43,8 +47,12 @@ while True:
 
         if(toleransi_value >= 1000 ):
             kiloOhm = toleransi_value / 1000
-            print(f"Nilai Total Resistor: {kiloOhm} Kilo Ohm")
+            print('-----------------------------------------')
+            print(f"Nilai Total Resistor: {kiloOhm} kOhm")
+            print('-----------------------------------------')
         else:
+            print('--------------------------------------------')
             print(f"Nilai Total Resistor: {toleransi_value} ohm")
+            print('--------------------------------------------')
     else:
         break
