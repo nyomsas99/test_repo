@@ -1,5 +1,5 @@
 while True:
-    print("1.Hexa Decimal to Decimal\n2.Decimal to Hexadecimal\n3.Calculate Resistor\n4.Exit")
+    print("1.Hexa Decimal to Decimal\n2.Decimal to Hexadecimal\n3.Calculate Resistor\n4.konversi fahrenheit to Celcius\n5.Konversi Celcius to Fahrenheit\n6.exit")
     x = int(input("What want you to do?: "))
     if(x == 1):
         def hex_to_decimal(hex_number):
@@ -54,5 +54,23 @@ while True:
             print('--------------------------------------------')
             print(f"Nilai Total Resistor: {toleransi_value} ohm")
             print('--------------------------------------------')
+    elif(x == 4):
+        def fahrenheit_ke_celsius(fahrenheit):
+            celsius = (fahrenheit - 32) * 5.0/9.0
+            return celsius
+        fahrenheit = float(input("Masukkan suhu dalam Fahrenheit: "))
+        celsius = fahrenheit_ke_celsius(fahrenheit)
+        print('--------------------------------------------------------------------------')
+        print(f"{fahrenheit} derajat Fahrenheit sama dengan {celsius:.2f} derajat Celsius")
+        print('--------------------------------------------------------------------------')
+    elif(x == 5):
+        def celsius_ke_fahrenheit(celsius):
+            fahrenheit = (celsius * 9.0/5.0) + 32
+            return fahrenheit
+        celsius = float(input("Masukkan suhu dalam Celsius: "))
+        fahrenheit = celsius_ke_fahrenheit(celsius)
+        print('--------------------------------------------------------------------------')
+        print(f"{celsius} derajat Celsius sama dengan {fahrenheit:.2f} derajat Fahrenheit")
+        print('--------------------------------------------------------------------------')
     else:
         break

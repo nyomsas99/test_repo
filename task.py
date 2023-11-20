@@ -9,7 +9,6 @@ def hitung_vokal(kalimat):
     for huruf in kalimat:
         if huruf in 'aeiou':
             jumlah_vokal += 1
-    
     # Mengembalikan hasil jumlah vokal
     return jumlah_vokal
 
